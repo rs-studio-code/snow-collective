@@ -94,6 +94,8 @@ img {
   padding: 1.5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  z-index: 100;
 }
 
 .site-nav .logo {
@@ -597,6 +599,10 @@ img {
    ============================================ */
 
 @media (max-width: 768px) {
+  .site-nav .logo-img {
+    height: 32px;
+  }
+
   .nav-toggle {
     display: block;
   }
@@ -605,22 +611,18 @@ img {
     display: none;
     position: absolute;
     top: 100%;
-    right: 2rem;
+    left: 0;
+    right: 0;
     background: white;
     flex-direction: column;
     padding: 1.5rem 2rem;
-    box-shadow: 2px 4px 16px var(--shadow);
+    box-shadow: 0 4px 16px var(--shadow);
     gap: 1rem;
-    z-index: 100;
+    z-index: 300;
   }
 
   .nav-links.open {
     display: flex;
-  }
-
-  .site-nav {
-    position: relative;
-    z-index: 200;
   }
 
   .hero {
