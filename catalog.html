@@ -12,8 +12,7 @@
   <!-- Navigation -->
   <nav class="site-nav">
     <a href="index.html" class="logo">
-      The Snow Collective
-      <span>woman-owned &middot; feral art</span>
+      <img src="images/site/logo.PNG" alt="The Snow Collective" class="logo-img">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -52,7 +51,9 @@
   <script src="catalog.js"></script>
   <script>
     // Mobile nav toggle
-    document.querySelector('.nav-toggle').addEventListener('click', function() {
+    var toggle = document.querySelector('.nav-toggle');
+    toggle.addEventListener('click', function() {
+      toggle.classList.toggle('open');
       document.querySelector('.nav-links').classList.toggle('open');
     });
   </script>

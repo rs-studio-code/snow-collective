@@ -97,21 +97,14 @@ img {
 }
 
 .site-nav .logo {
-  font-family: var(--font-handwritten);
-  font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.site-nav .logo span {
-  font-size: 1rem;
-  font-weight: 400;
-  display: block;
-  color: var(--ink-light);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-family: var(--font-body);
-  font-size: 0.65rem;
+.site-nav .logo-img {
+  height: 50px;
+  width: auto;
+  border-radius: 4px;
 }
 
 .nav-links {
@@ -261,13 +254,23 @@ img {
 
 /* --- About Section --- */
 .about-section {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1.2fr 1fr 0.8fr;
+  gap: 2.5rem;
   align-items: center;
+}
+
+/* Brand logo card in about section */
+.brand-logo {
+  max-width: 240px;
+}
+
+.brand-logo img {
+  border: 6px solid white;
+  box-shadow: 2px 3px 12px var(--shadow);
 }
 
 .about-text h2 {
@@ -562,16 +565,31 @@ img {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  z-index: 200;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-toggle span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 26px;
+  height: 3px;
   background: var(--ink);
   margin: 5px 0;
+  border-radius: 2px;
   transition: all 0.3s;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 /* ============================================
@@ -602,6 +620,7 @@ img {
 
   .site-nav {
     position: relative;
+    z-index: 200;
   }
 
   .hero {
@@ -627,6 +646,11 @@ img {
 
   .about-image {
     max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .brand-logo {
+    max-width: 200px;
     margin: 0 auto;
   }
 

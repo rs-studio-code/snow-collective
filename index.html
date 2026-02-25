@@ -12,8 +12,7 @@
   <!-- Navigation -->
   <nav class="site-nav">
     <a href="index.html" class="logo">
-      The Snow Collective
-      <span>woman-owned &middot; feral art</span>
+      <img src="images/site/logo.PNG" alt="The Snow Collective" class="logo-img">
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -72,8 +71,11 @@
     </div>
     <div class="about-image scrapbook-img tilted-right">
       <div class="tape tape-top"></div>
-      <!-- Replace src with your own image -->
       <img src="images/site/about.jpg" alt="The Snow Collective" style="width:100%;height:320px;object-fit:cover;">
+    </div>
+    <div class="brand-logo scrapbook-img tilted-left">
+      <div class="tape tape-corner"></div>
+      <img src="images/site/logo.PNG" alt="The Snow Collective logo">
     </div>
   </section>
 
@@ -105,7 +107,9 @@
 
   <script>
     // Mobile nav toggle
-    document.querySelector('.nav-toggle').addEventListener('click', function() {
+    var toggle = document.querySelector('.nav-toggle');
+    toggle.addEventListener('click', function() {
+      toggle.classList.toggle('open');
       document.querySelector('.nav-links').classList.toggle('open');
     });
   </script>
