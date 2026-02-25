@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — The Snow Collective</title>
+  <meta name="description" content="Browse handmade art by Snow — buttons, paintings, drawings, and more.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="paper-bg">
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <a href="index.html" class="logo">
+      The Snow Collective
+      <span>woman-owned &middot; feral art</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="catalog.html" class="active">Portfolio</a></li>
+    </ul>
+  </nav>
+
+  <!-- Catalog Header -->
+  <div class="catalog-header">
+    <h1>the collective</h1>
+    <p>handmade buttons, paintings, drawings &amp; more</p>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="catalog-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="buttons">Buttons</button>
+    <button class="filter-btn" data-filter="paintings">Paintings</button>
+    <button class="filter-btn" data-filter="drawings">Drawings</button>
+    <button class="filter-btn" data-filter="other">Other</button>
+  </div>
+
+  <!-- Catalog Grid (populated by JS) -->
+  <div class="catalog-grid" id="catalog-grid">
+    <p class="catalog-empty">Loading the collection...</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 The Snow Collective. Made with <span class="heart">&hearts;</span> and a little bit of chaos.</p>
+  </footer>
+
+  <script src="catalog.js"></script>
+  <script>
+    // Mobile nav toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

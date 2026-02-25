@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Monocle Bunny",
+    "category": "drawings",
+    "description": "Pencil and watercolor bunny with monocle, mustache, bow tie, and a garden of wildflowers. A distinguished gentleman.",
+    "image": "images/inventory/monocle-bunny.jpg",
+    "status": "available"
+  },
+  {
+    "name": "The Watcher",
+    "category": "drawings",
+    "description": "Detailed graphite eye study. Every lash drawn by hand, every reflection caught in the iris.",
+    "image": "images/inventory/the-watcher.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Quiet Smile",
+    "category": "drawings",
+    "description": "Graphite portrait — a soft, knowing smile. Drawn from a moment that felt worth keeping.",
+    "image": "images/inventory/quiet-smile.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Looking Up",
+    "category": "drawings",
+    "description": "Pencil portrait with upward gaze. There's something hopeful in those eyes.",
+    "image": "images/inventory/looking-up.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Wildflower Set",
+    "category": "buttons",
+    "description": "Handmade button set featuring pressed wildflower designs. Each one is a tiny garden you can wear.",
+    "image": "images/inventory/wildflower-buttons.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Feral Heart Pins",
+    "category": "buttons",
+    "description": "Hand-drawn heart designs on 1.5\" buttons. A little rough around the edges — just like us.",
+    "image": "images/inventory/feral-heart-pins.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Midnight Garden",
+    "category": "paintings",
+    "description": "Mixed media floral piece. Dark background with vibrant blooms fighting their way through.",
+    "image": "images/inventory/midnight-garden.jpg",
+    "status": "available"
+  },
+  {
+    "name": "Dad's Hands",
+    "category": "drawings",
+    "description": "A graphite study of hands at rest. Some drawings are just for remembering.",
+    "image": "images/inventory/dads-hands.jpg",
+    "status": "available"
+  }
+]
